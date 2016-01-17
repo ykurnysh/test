@@ -1,0 +1,5 @@
+<h1>Open document</h1>
+<% @documents.each do |z| %>
+      <%= z.title %><br>
+      <a href="/documents/+ <%= z.title %> +/edit"><%= z.title %></a><br>
+<% end %>

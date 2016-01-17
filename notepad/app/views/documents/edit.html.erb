@@ -1,0 +1,7 @@
+<%= form_tag('/documents') do %>
+<applet codebase="/" code=NotepadApplet width="1000" height="500"><param name="text" value="<%=@document.html%>">
+</param>
+</applet>
+    <%= submit_tag("Save document") %>
+
+<% end %>
